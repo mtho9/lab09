@@ -45,7 +45,7 @@ public class RadixSortQueue {
              */
             int i = 0;
             for(Queue q : queues) {
-                while(q.isEmpty() == false) {
+                while(!q.isEmpty()) {
                     input[i] = (int) q.poll();
                     i++;
                 }        
